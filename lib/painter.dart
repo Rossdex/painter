@@ -163,7 +163,7 @@ class PictureDetails{
 
   const PictureDetails(this.picture,this.width,this.height);
 
-  Image toImage() async {
+  Future<Image> toImage() async {
     return await picture.toImage(width, height);
   }
 
